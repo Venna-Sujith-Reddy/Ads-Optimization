@@ -1,13 +1,21 @@
-# Ads-Optimization
-Optimizing the best Ads using Reinforcement learning Algorithms such as Thompson Sampling and Upper Confidence Bound.
+# Ads CTR Optimization
 
+Multi-armed bandit approach to choosing which ad to show — balancing **exploration vs exploitation**.
 
-# Thompson Sampling:
+## Algorithms
+- **Thompson Sampling** — sample from posterior reward beliefs
+- **Upper Confidence Bound (UCB)** — optimistic action selection
 
-In artificial intelligence, Thompson sampling, named after William R. Thompson, is a heuristic for choosing actions that addresses the exploration-exploitation dilemma in the multi-armed bandit problem. It consists in choosing the action that maximizes the expected reward with respect to a randomly drawn belief.
+## Dataset
+`Ads_CTR_Optimisation.csv` — simulated click-through data across ad variants.
 
-# Upper Confidence Bound:
+## Stack
+`Python` · `NumPy` / `pandas` · Jupyter
 
-Upper-Confidence-Bound (UCB) Algorithms
-Thompson sampling and upper-confidence bound algorithms share a fundamental property that underlies many of their theoretical guarantees. Roughly speaking, both algorithms allocate exploratory effort to actions that might be optimal and are in this sense "optimistic." 
-Leveraging this property, one can translate regret bounds established for UCB algorithms to Bayesian regret bounds for Thompson sampling or unify regret analysis across both these algorithms and many classes of problems.
+## Run
+```bash
+jupyter notebook Ads_Optimization.ipynb
+```
+
+## Author
+[Sujith Reddy Venna](https://github.com/Venna-Sujith-Reddy) · [Portfolio](https://venna-sujith-reddy.github.io/My-portfolio/)
